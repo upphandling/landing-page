@@ -1,7 +1,7 @@
 export const AppConfig = {
-  site_name: 'Starter',
-  title: 'Nextjs Starter',
+  site_name: 'Upphandling.app',
+  title: 'Upphandling.app',
   description:
-    'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore ducimus animi perferendis, placeat fugit.',
-  locale: 'en',
+    'Enkel och dynamisk upphandling av programvaruutvecklng baserat på öppen källkod.',
+  locale: 'swe',
 };

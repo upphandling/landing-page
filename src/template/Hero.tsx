@@ -13,23 +13,13 @@ const Hero = () => (
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
           <Link href="/">
-            <a>Docs</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
-            <a>Blog</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
-            <a>Sign in</a>
+            <a>Dokumentation</a>
           </Link>
         </li>
         <li>
           <Link href="/">
             <a>
-              <Button>Start Free Trial</Button>
+              <Button>Testa idag!</Button>
             </a>
           </Link>
         </li>
@@ -40,15 +30,15 @@ const Hero = () => (
       <HeroOneButton
         title={
           <>
-            {'The modern landing page for\n'}
-            <span className="text-primary-500">React developer</span>
+            {'Enkel och dynamisk upphandling av programvaruutvecklng\n'}
+            <span className="text-primary-500">baserat på öppen källkod</span>
           </>
         }
-        description="The easiest way to build React landing page in seconds."
+        description="Ökar konkurrens och innovation med hjälp av öppenhet"
         button={
           <Link href="/">
             <a>
-              <Button xl>Start your 14-day Free Trial</Button>
+              <Button xl>Testa idag!</Button>
             </a>
           </Link>
         }
