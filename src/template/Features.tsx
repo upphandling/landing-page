@@ -5,7 +5,7 @@ const Features = () => (
   <Section>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-x-3 gap-y-8">
       <FeatureElement
-        title="Enkelt"
+        title="Effektivt"
         icon={
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -19,28 +19,10 @@ const Features = () => (
           </svg>
         }
       >
-        Det är enkelt både för dig som upphandlar och för leverantörerna
+        Det är enkelt och snabbt både för dig som upphandlar och för leverantörerna
       </FeatureElement>
-      <FeatureElement
-        title="Allt via en app"
-        icon={
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M0 0h24v24H0z" stroke="none" />
-            <path d="M12 12v.01M19.071 4.929a4 10 45 00-9.9 4.243 4 10 45 00-4.242 9.9 4 10 45 009.9-4.244 4 10 45 004.242-9.9" />
-            <path d="M4.929 4.929a10 4 45 004.243 9.9 10 4 45 009.9 4.242 10 4 45 00-4.244-9.9 10 4 45 00-9.9-4.242" />
-          </svg>
-        }
-      >
-        Glöm långa kravdokument. Du kryssar i för vad du har för allmänna krav och resten sköter vi.
-      </FeatureElement>
-      <FeatureElement
-        title="Lagligt"
+       <FeatureElement
+        title="Säkert"
         icon={
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -55,8 +37,27 @@ const Features = () => (
           </svg>
         }
       >
-        Vi använder oss av DIS/DPS som är en fullt godkänd metod för dynamisk inköpssystem.
+        Vi använder oss av DIS/DPS som är en godkänd metod för dynamisk inköpssystem.
       </FeatureElement>
+      <FeatureElement
+        title="Bästa kompetensen"
+        icon={
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M0 0h24v24H0z" stroke="none" />
+            <path d="M12 12v.01M19.071 4.929a4 10 45 00-9.9 4.243 4 10 45 00-4.242 9.9 4 10 45 009.9-4.244 4 10 45 004.242-9.9" />
+            <path d="M4.929 4.929a10 4 45 004.243 9.9 10 4 45 009.9 4.242 10 4 45 00-4.244-9.9 10 4 45 00-9.9-4.242" />
+          </svg>
+        }
+      >
+        Du får tillgång till de bästa leverantörerna för ditt projekt.
+      </FeatureElement>
+     
     </div>
   </Section>
 );

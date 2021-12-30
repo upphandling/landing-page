@@ -33,7 +33,7 @@ const Hero = () => (
           <HeroOneButton
             title={
               <>
-                {'Det lätta sättet att upphandla\n'}
+                {'Det bästa sättet att upphandla\n'}
                 <span className="text-primary-500">öppen källkod</span>
               </>
             }

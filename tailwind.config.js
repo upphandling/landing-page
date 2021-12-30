@@ -3,6 +3,9 @@ module.exports = {
   purge: ['./src/**/*.{js,ts,jsx,tsx}'],
   darkMode: false,
   theme: {
+    fontFamily: {
+      'sans': ['Helvetica Neue', 'Arial', 'sans-serif']
+    },
     fontSize: {
       xs: '0.75rem',
       sm: '0.875rem',
