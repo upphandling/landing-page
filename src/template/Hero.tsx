@@ -27,24 +27,27 @@ const Hero = () => (
     </Section>
 
     <Section yPadding="pt-20 pb-32">
-      <img className="w-2/5" src="/assets/images/thumb-up-dynamic-color.png" />
-
-      <HeroOneButton
-        title={
-          <>
-            {'Enkel och dynamisk upphandling av programvaruutvecklng\n'}
-            <span className="text-primary-500">baserat på öppen källkod</span>
-          </>
-        }
-        description="Ökar konkurrens och innovation med hjälp av öppenhet"
-        button={
-          <Link href="/">
-            <a>
-              <Button xl>Testa idag!</Button>
-            </a>
-          </Link>
-        }
-      />
+      <div className="flex">
+        <img className="w-2/5 p-8" src="/assets/images/thumb-up-dynamic-color.png" />
+        <div className="w-3/5">
+          <HeroOneButton
+            title={
+              <>
+                {'Det lätta sättet att upphandla\n'}
+                <span className="text-primary-500">öppen källkod</span>
+              </>
+            }
+            description="Ökar konkurrens och innovation med hjälp av öppenhet"
+            button={
+              <Link href="/">
+                <a>
+                  <Button xl>Testa idag!</Button>
+                </a>
+              </Link>
+            }
+          />
+        </div>
+      </div>
     </Section>
   </Background>
 );

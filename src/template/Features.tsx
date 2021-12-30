@@ -5,7 +5,7 @@ const Features = () => (
   <Section>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-x-3 gap-y-8">
       <FeatureElement
-        title="Your title"
+        title="Enkelt"
         icon={
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -19,10 +19,10 @@ const Features = () => (
           </svg>
         }
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Det är enkelt både för dig som upphandlar och för leverantörerna
       </FeatureElement>
       <FeatureElement
-        title="Your title"
+        title="Allt via en app"
         icon={
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -37,10 +37,10 @@ const Features = () => (
           </svg>
         }
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Glöm långa kravdokument. Du kryssar i för vad du har för allmänna krav och resten sköter vi.
       </FeatureElement>
       <FeatureElement
-        title="Your title"
+        title="Lagligt"
         icon={
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +55,7 @@ const Features = () => (
           </svg>
         }
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Vi använder oss av DIS/DPS som är en fullt godkänd metod för dynamisk inköpssystem.
       </FeatureElement>
     </div>
   </Section>

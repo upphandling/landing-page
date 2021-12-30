@@ -3,28 +3,28 @@ import { Section } from '../layout/Section';
 
 const VerticalFeatures = () => (
   <Section
-    title="Your title here"
-    subtitle="Features"
-    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus malesuada nisi tellus, non imperdiet nisi tempor at."
+    title="Se hur tjänsten fungerar"
+    subtitle="Exempel"
+    description="Följ den enkla processen nedan för att lära dig hur du skapar en upphandling på tre minuter"
   >
     <VerticalFeatureRow
-      title="Your title here"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
-      image="/assets/images/feature.svg"
-      imageAlt="First feature alt text"
+      title="Skapa ett DIS"
+      description="Här skapar du grunden för upphandlingen: ett DIS. Du anger vilka krav du har på företagen som ska kunna ansöka samt pekar på ett GIT repository där koden ligger / kommer ligga."
+      image="/assets/images/create-dis.png"
+      imageAlt="Skapa DIS"
     />
     <VerticalFeatureRow
-      title="Your title here"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
-      image="/assets/images/feature2.svg"
-      imageAlt="Second feature alt text"
+      title="Företagen hittar din DIS-upphandling"
+      description="Du kan både annonsera din DIS i traditionella upphandlingssystem eller bara förlita dig på vår app. Företagen hittar alla tillgängliga DIS-upphandlingar här."
+      image="/assets/images/find-dis.png"
+      imageAlt="Hitta DIS"
       reverse
     />
     <VerticalFeatureRow
-      title="Your title here"
+      title="Företagen ansöker om att bli leverantörer"
       description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse bibendum, nunc non posuere consectetur, justo erat semper enim, non hendrerit dui odio id enim."
-      image="/assets/images/feature3.svg"
-      imageAlt="Third feature alt text"
+      image="/assets/images/apply-dis.png"
+      imageAlt="Ansöka"
     />
   </Section>
 );
