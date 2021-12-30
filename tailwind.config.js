@@ -1,7 +1,7 @@
 module.exports = {
   mode: 'jit',
   purge: ['./src/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false,
+  darkMode: 'media',
   theme: {
     fontFamily: {
       'sans': ['Helvetica Neue', 'Arial', 'sans-serif']
@@ -21,15 +21,15 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          100: '#E6F6FE',
-          200: '#C0EAFC',
-          300: '#9ADDFB',
-          400: '#4FC3F7',
-          500: '#03A9F4',
-          600: '#0398DC',
-          700: '#026592',
-          800: '#014C6E',
-          900: '#013349',
+          100: '#D6E4FF',
+          200: '#ADC8FF',
+          300: '#84A9FF',
+          400: '#6690FF',
+          500: '#3366FF',
+          600: '#254EDB',
+          700: '#1939B7',
+          800: '#102693',
+          900: '#091A7A',
         },
         gray: {
           100: '#f7fafc',
