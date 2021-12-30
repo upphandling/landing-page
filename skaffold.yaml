@@ -5,8 +5,8 @@ metadata:
 build:
   artifacts:
   - image: landing-page
-    buildpacks:
-      builder: gcr.io/buildpacks/builder:v1
+    docker:
+      dockerfile: Dockerfile
 deploy:
   kubectl:
     manifests:
