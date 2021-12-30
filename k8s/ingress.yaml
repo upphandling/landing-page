@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: landingpage
+  name: landing-page
   namespace: upphandling
   annotations:
     kubernetes.io/ingress.class: "public"
@@ -15,7 +15,7 @@ spec:
   tls:
   - hosts:
     - upphandling.app
-    secretName: landingpage-secret-tls
+    secretName: landing-page-secret-tls
   rules:
   - host: upphandling.app
     http:
@@ -24,6 +24,6 @@ spec:
         path: "/"
         backend:
           service:
-            name: landingpage
+            name: landing-page
             port:
               number: 3000
