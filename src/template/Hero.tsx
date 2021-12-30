@@ -27,6 +27,8 @@ const Hero = () => (
     </Section>
 
     <Section yPadding="pt-20 pb-32">
+      <img className="w-2/5" src="/assets/images/thumb-up-dynamic-color.png" />
+
       <HeroOneButton
         title={
           <>

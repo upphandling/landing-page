@@ -3,5 +3,5 @@ export const AppConfig = {
   title: 'Upphandling.app',
   description:
     'Enkel och dynamisk upphandling av programvaruutvecklng baserat på öppen källkod.',
-  locale: 'swe',
+  locale: 'sv-se',
 };
