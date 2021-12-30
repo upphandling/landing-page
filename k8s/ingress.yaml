@@ -1,22 +1,29 @@
-apiVersion: networking.k8s.io/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: landingpage-ingress
+  name: landingpage
   namespace: upphandling
   annotations:
     kubernetes.io/ingress.class: "public"
     cert-manager.io/cluster-issuer: "letsencrypt-prod"
     nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
     nginx.ingress.kubernetes.io/http2-push-preload: "true"
+    nginx.ingress.kubernetes.io/proxy-body-size: "500m"
+    nginx.ingress.kubernetes.io/proxy-pass-headers: "Location"
+
 spec:
   tls:
   - hosts:
     - upphandling.app
-    secretName: landingpage-prod-tls
+    secretName: landingpage-secret-tls
   rules:
   - host: upphandling.app
     http:
       paths:
-      - backend:
-          serviceName: landingpage
-          servicePort: 80
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: landingpage
+            port:
+              number: 3000
