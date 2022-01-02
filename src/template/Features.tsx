@@ -7,7 +7,7 @@ const Features = () => (
       <FeatureElement
         title="Effektivt"
         icon={
-                   <img src="/assets/images/notebook-dynamic-gradient.png"/>
+                   <img src="/assets/images/thumb-up-dynamic-gradient.png"/>
 
         }
       >
@@ -16,7 +16,7 @@ const Features = () => (
        <FeatureElement
         title="Säkert"
         icon={
-          <img src="/assets/images/notebook-dynamic-gradient.png"/>
+          <img src="/assets/images/locker-dynamic-gradient.png"/>
         }
       >
         Vi använder oss av DIS/DPS som är en godkänd metod för dynamisk inköpssystem.

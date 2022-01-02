@@ -8,7 +8,7 @@ type IFeatureElementProps = {
 
 const FeatureElement = (props: IFeatureElementProps) => (
   <div className="feature-element text-center">
-    <div className="w-12 h-12 mx-auto flex items-center justify-center rounded-full bg-primary-400">
+    <div className="w-24 h-24 mx-auto flex items-center justify-center rounded-full">
       {props.icon}
     </div>
 
