@@ -6,32 +6,31 @@ import {PricingCard} from '../pricing/PricingCard'
 import {PricingFeature} from '../pricing/PricingFeature'
 
 const Pricing = () => (
-  <Section title="Flexible Plans" subtitle="Pricing">
+  <Section title="Enkla priser" subtitle="Prissättning">
     <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
       <PricingCard
-        name="FREE"
-        price="$0 / mo"
-        description="Best for individuals"
+        name="Startup / SMB"
+        price="0kr / mån"
+        description="Gratis för småföretagare"
         button={
-          <Link href="/">
+          <Link href="https://www.apple.com/se/app-store/">
             <a>
               <Button full secondary>
-                Get Started
+                Ladda ner appen
               </Button>
             </a>
           </Link>
-        }
-      >
-        <PricingFeature text="1 Team Members" />
-        <PricingFeature text="1 Website" />
-        <PricingFeature text="1 GB Storage" />
-        <PricingFeature text="1 TB Transfer" />
-        <PricingFeature text="Email Support" />
+        }>
+        <PricingFeature text="<25 medlemmar i ditt team" />
+        <PricingFeature text="<10 ramavtal per företag" />
+        <PricingFeature text="Obegränsat antal specifika upphandlingar" />
+        <PricingFeature text="Prenumerera på upphandlingar med din kompetens" />
+        <PricingFeature text="Pushnotiser med anbud/förfarande" />
       </PricingCard>
       <PricingCard
-        name="PREMIUM"
-        price="$19 / mo"
-        description="Best for small teams"
+        name="UPPHANDLARE"
+        price="2000kr / DIS / mån"
+        description="Första DIS är gratis"
         popular
         button={
           <Link href="/">
@@ -39,18 +38,16 @@ const Pricing = () => (
               <Button full>Get Started</Button>
             </a>
           </Link>
-        }
-      >
-        <PricingFeature text="5 Team Members" />
-        <PricingFeature text="5 Website" />
-        <PricingFeature text="5 GB Storage" />
-        <PricingFeature text="5 TB Transfer" />
-        <PricingFeature text="Email Support" />
+        }>
+        <PricingFeature text="Obegränsat antal godkända företag" />
+        <PricingFeature text="Pushnotiser" />
+        <PricingFeature text="Email notifieringar" />
+        <PricingFeature text="PDF avtal" />
       </PricingCard>
       <PricingCard
-        name="ENTERPRISE"
-        price="$99 / mo"
-        description="Best for industry leader"
+        name="ANVÄNDARLICENS"
+        price="1000kr / användare / mån"
+        description="Bäst för större företag"
         button={
           <Link href="/">
             <a>
@@ -59,13 +56,12 @@ const Pricing = () => (
               </Button>
             </a>
           </Link>
-        }
-      >
-        <PricingFeature text="30 Team Members" />
-        <PricingFeature text="30 Website" />
-        <PricingFeature text="30 GB Storage" />
-        <PricingFeature text="30 TB Transfer" />
-        <PricingFeature text="Email Support" />
+        }>
+        <PricingFeature text="Obegränsat antal teammedlemmar" />
+        <PricingFeature text="Obegränsat antal ramavtal" />
+        <PricingFeature text="Pushnotifieringar" />
+        <PricingFeature text="Email-notifieringar" />
+        <PricingFeature text="PDF avtal" />
       </PricingCard>
     </div>
   </Section>
