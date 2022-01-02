@@ -1,7 +1,7 @@
-import Link from 'next/link';
+import Link from 'next/link'
 
-import { QuestionAnswer } from '../faq/QuestionAnswer';
-import { Section } from '../layout/Section';
+import {QuestionAnswer} from '../faq/QuestionAnswer'
+import {Section} from '../layout/Section'
 
 const FAQ = () => (
   <Section
@@ -65,6 +65,6 @@ const FAQ = () => (
       </QuestionAnswer>
     </div>
   </Section>
-);
+)
 
-export { FAQ };
+export {FAQ}

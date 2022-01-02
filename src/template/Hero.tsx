@@ -1,11 +1,11 @@
-import Link from 'next/link';
+import Link from 'next/link'
 
-import { Background } from '../background/Background';
-import { Button } from '../button/Button';
-import { HeroOneButton } from '../hero/HeroOneButton';
-import { Section } from '../layout/Section';
-import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
-import { Logo } from './Logo';
+import {Background} from '../background/Background'
+import {Button} from '../button/Button'
+import {HeroOneButton} from '../hero/HeroOneButton'
+import {Section} from '../layout/Section'
+import {NavbarTwoColumns} from '../navigation/NavbarTwoColumns'
+import {Logo} from './Logo'
 
 const Hero = () => (
   <Background color="bg-gray-100">
@@ -28,7 +28,11 @@ const Hero = () => (
 
     <Section yPadding="pt-20 pb-32">
       <div className="md:flex">
-          <img className=" h-80 object-contain md:w-1/3 md:h-full md:self-center" src="/assets/images/thumb-up-dynamic-color.png" alt="Thumbs up"/>
+        <img
+          className=" h-80 object-contain md:w-1/3 md:h-full md:self-center"
+          src="/assets/images/thumb-up-dynamic-color.png"
+          alt="Thumbs up"
+        />
         <div className="p-8">
           <HeroOneButton
             title={
@@ -50,6 +54,6 @@ const Hero = () => (
       </div>
     </Section>
   </Background>
-);
+)
 
-export { Hero };
+export {Hero}

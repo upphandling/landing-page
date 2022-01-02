@@ -1,9 +1,9 @@
 type ITestimonialCardProps = {
-  image: string;
-  imageAlt: string;
-  text: string;
-  author: string;
-};
+  image: string
+  imageAlt: string
+  text: string
+  author: string
+}
 
 const TestimonialCard = (props: ITestimonialCardProps) => (
   <div className="text-center">
@@ -17,6 +17,6 @@ const TestimonialCard = (props: ITestimonialCardProps) => (
 
     <div className="mt-2 font-semibold">{props.author}</div>
   </div>
-);
+)
 
-export { TestimonialCard };
+export {TestimonialCard}

@@ -1,15 +1,15 @@
-import { ReactNode } from 'react';
+import {ReactNode} from 'react'
 
-import className from 'classnames';
+import className from 'classnames'
 
 type IPricingCardProps = {
-  name: string;
-  price: string;
-  description: string;
-  popular?: boolean;
-  button: ReactNode;
-  children: ReactNode;
-};
+  name: string
+  price: string
+  description: string
+  popular?: boolean
+  button: ReactNode
+  children: ReactNode
+}
 
 const PricingCard = (props: IPricingCardProps) => {
   const pricingCardClass = className(
@@ -19,8 +19,8 @@ const PricingCard = (props: IPricingCardProps) => {
     'rounded-md',
     {
       'bg-primary-100': props.popular,
-    }
-  );
+    },
+  )
 
   return (
     <div className={pricingCardClass}>
@@ -40,7 +40,7 @@ const PricingCard = (props: IPricingCardProps) => {
 
       {props.button}
     </div>
-  );
-};
+  )
+}
 
-export { PricingCard };
+export {PricingCard}

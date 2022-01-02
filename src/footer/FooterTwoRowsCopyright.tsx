@@ -1,9 +1,9 @@
-import { ReactNode } from 'react';
+import {ReactNode} from 'react'
 
 type IFooterTwoRowsCopyrightProps = {
-  siteName: string;
-  children: ReactNode;
-};
+  siteName: string
+  children: ReactNode
+}
 
 const FooterTwoRowsCopyright = (props: IFooterTwoRowsCopyrightProps) => (
   <>
@@ -15,6 +15,6 @@ const FooterTwoRowsCopyright = (props: IFooterTwoRowsCopyrightProps) => (
       }. All Rights Reserved.`}
     </div>
   </>
-);
+)
 
-export { FooterTwoRowsCopyright };
+export {FooterTwoRowsCopyright}

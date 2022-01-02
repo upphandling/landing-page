@@ -1,9 +1,9 @@
-import { ReactNode } from 'react';
+import {ReactNode} from 'react'
 
 type IFooterLinksProps = {
-  title: string;
-  children: ReactNode;
-};
+  title: string
+  children: ReactNode
+}
 
 const FooterLinks = (props: IFooterLinksProps) => (
   <div className="footer-links text-center sm:text-left">
@@ -25,6 +25,6 @@ const FooterLinks = (props: IFooterLinksProps) => (
       `}
     </style>
   </div>
-);
+)
 
-export { FooterLinks };
+export {FooterLinks}

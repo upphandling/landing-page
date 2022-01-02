@@ -1,14 +1,14 @@
-import { AppConfig } from '../utils/AppConfig';
+import {AppConfig} from '../utils/AppConfig'
 
 type ILogoProps = {
-  xl?: boolean;
-};
+  xl?: boolean
+}
 
 const Logo = (props: ILogoProps) => {
-  const size = props.xl ? '44' : '32';
+  const size = props.xl ? '44' : '32'
   const fontStyle = props.xl
     ? 'font-semibold text-3xl'
-    : 'font-semibold text-xl';
+    : 'font-semibold text-xl'
 
   return (
     <div className={`text-gray-900 flex items-center ${fontStyle}`}>
@@ -32,7 +32,7 @@ const Logo = (props: ILogoProps) => {
 
       {AppConfig.site_name}
     </div>
-  );
-};
+  )
+}
 
-export { Logo };
+export {Logo}

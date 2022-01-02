@@ -1,5 +1,5 @@
-import { VerticalFeatureRow } from '../feature/VerticalFeatureRow';
-import { Section } from '../layout/Section';
+import {VerticalFeatureRow} from '../feature/VerticalFeatureRow'
+import {Section} from '../layout/Section'
 
 const VerticalFeatures = () => (
   <Section
@@ -35,6 +35,6 @@ const VerticalFeatures = () => (
       reverse
     />
   </Section>
-);
+)
 
-export { VerticalFeatures };
+export {VerticalFeatures}

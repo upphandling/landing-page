@@ -1,11 +1,11 @@
-import className from 'classnames';
+import className from 'classnames'
 
 type IButtonProps = {
-  xl?: boolean;
-  secondary?: boolean;
-  full?: boolean;
-  children: string;
-};
+  xl?: boolean
+  secondary?: boolean
+  full?: boolean
+  children: string
+}
 
 const Button = (props: IButtonProps) => {
   const btnClass = className({
@@ -15,7 +15,7 @@ const Button = (props: IButtonProps) => {
     'btn-secondary': props.secondary,
     'btn-primary': !props.secondary,
     'w-full': props.full,
-  });
+  })
 
   return (
     <div className={btnClass}>
@@ -53,7 +53,7 @@ const Button = (props: IButtonProps) => {
         `}
       </style>
     </div>
-  );
-};
+  )
+}
 
-export { Button };
+export {Button}

@@ -1,9 +1,9 @@
-import { ReactNode } from 'react';
+import {ReactNode} from 'react'
 
 type IFooterCompanyInfoProps = {
-  logo: ReactNode;
-  description: string;
-};
+  logo: ReactNode
+  description: string
+}
 
 const FooterCompanyInfo = (props: IFooterCompanyInfoProps) => (
   <div className="text-center md:text-left">
@@ -11,6 +11,6 @@ const FooterCompanyInfo = (props: IFooterCompanyInfoProps) => (
 
     <div className="mt-2 text-sm">{props.description}</div>
   </div>
-);
+)
 
-export { FooterCompanyInfo };
+export {FooterCompanyInfo}

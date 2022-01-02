@@ -4,4 +4,4 @@ export const AppConfig = {
   description:
     'Enkel och dynamisk upphandling av programvaruutvecklng baserat på öppen källkod.',
   locale: 'sv-se',
-};
+}

@@ -1,19 +1,19 @@
-import { ReactNode, useState } from 'react';
+import {ReactNode, useState} from 'react'
 
-import className from 'classnames';
-import Link from 'next/link';
+import className from 'classnames'
+import Link from 'next/link'
 
 type INavbarProps = {
-  logo: ReactNode;
-  children: ReactNode;
-};
+  logo: ReactNode
+  children: ReactNode
+}
 
 const NavbarTwoColumns = (props: INavbarProps) => {
-  const [showMenu, setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(false)
 
   const handleShowMenu = () => {
-    setShowMenu(!showMenu);
-  };
+    setShowMenu(!showMenu)
+  }
 
   const navClass = className(
     'w-full',
@@ -23,8 +23,8 @@ const NavbarTwoColumns = (props: INavbarProps) => {
     'sm:mt-0',
     {
       hidden: !showMenu,
-    }
-  );
+    },
+  )
 
   return (
     <div className="flex flex-wrap justify-between items-center">
@@ -97,7 +97,7 @@ const NavbarTwoColumns = (props: INavbarProps) => {
         `}
       </style>
     </div>
-  );
-};
+  )
+}
 
-export { NavbarTwoColumns };
+export {NavbarTwoColumns}

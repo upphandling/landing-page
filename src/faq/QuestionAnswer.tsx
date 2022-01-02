@@ -1,9 +1,9 @@
-import { ReactNode } from 'react';
+import {ReactNode} from 'react'
 
 type IQuestionAnswerProps = {
-  question: string;
-  children: ReactNode;
-};
+  question: string
+  children: ReactNode
+}
 
 const QuestionAnswer = (props: IQuestionAnswerProps) => (
   <div className="question-answer">
@@ -27,6 +27,6 @@ const QuestionAnswer = (props: IQuestionAnswerProps) => (
       `}
     </style>
   </div>
-);
+)
 
-export { QuestionAnswer };
+export {QuestionAnswer}

@@ -1,10 +1,10 @@
-import { ReactNode } from 'react';
+import {ReactNode} from 'react'
 
 type IFeatureElementProps = {
-  title: string;
-  icon: ReactNode;
-  children: ReactNode;
-};
+  title: string
+  icon: ReactNode
+  children: ReactNode
+}
 
 const FeatureElement = (props: IFeatureElementProps) => (
   <div className="feature-element text-center">
@@ -25,6 +25,6 @@ const FeatureElement = (props: IFeatureElementProps) => (
       `}
     </style>
   </div>
-);
+)
 
-export { FeatureElement };
+export {FeatureElement}

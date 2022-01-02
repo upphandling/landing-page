@@ -1,6 +1,6 @@
 type IPricingFeatureProps = {
-  text: string;
-};
+  text: string
+}
 
 const PricingFeature = (props: IPricingFeatureProps) => (
   <li className="flex items-center mt-2">
@@ -17,6 +17,6 @@ const PricingFeature = (props: IPricingFeatureProps) => (
     </svg>
     {props.text}
   </li>
-);
+)
 
-export { PricingFeature };
+export {PricingFeature}

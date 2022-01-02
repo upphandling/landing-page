@@ -4,11 +4,11 @@ metadata:
   name: landing-page
 build:
   artifacts:
-  - image: landing-page
-    docker:
-      dockerfile: Dockerfile
+    - image: landing-page
+      docker:
+        dockerfile: Dockerfile
 deploy:
   kubectl:
     manifests:
-    - k8s/deployment.yaml
-    - k8s/ingress.yaml
+      - k8s/deployment.yaml
+      - k8s/ingress.yaml

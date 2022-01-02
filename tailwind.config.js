@@ -4,7 +4,7 @@ module.exports = {
   darkMode: 'media',
   theme: {
     fontFamily: {
-      'sans': ['Helvetica Neue', 'Arial', 'sans-serif']
+      sans: ['Helvetica Neue', 'Arial', 'sans-serif'],
     },
     fontSize: {
       xs: '0.75rem',
@@ -50,4 +50,4 @@ module.exports = {
   },
   variants: {},
   plugins: [],
-};
+}

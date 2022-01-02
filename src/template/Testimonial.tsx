@@ -1,6 +1,6 @@
-import { RoundedBackground } from '../background/RoundedBackground';
-import { Section } from '../layout/Section';
-import { TestimonialCard } from '../testimonial/TestimonialCard';
+import {RoundedBackground} from '../background/RoundedBackground'
+import {Section} from '../layout/Section'
+import {TestimonialCard} from '../testimonial/TestimonialCard'
 
 const Testimonial = () => (
   <Section title="Customer's Review" subtitle="Testimonials">
@@ -27,6 +27,6 @@ const Testimonial = () => (
       </div>
     </RoundedBackground>
   </Section>
-);
+)
 
-export { Testimonial };
+export {Testimonial}
