@@ -27,13 +27,13 @@ const Hero = () => (
     </Section>
 
     <Section yPadding="pt-20 pb-32">
-      <div className="flex">
-        <img className="w-2/5 p-8" src="/assets/images/thumb-up-dynamic-color.png" />
-        <div className="w-3/5">
+      <div className="md:flex">
+          <img className=" h-80 object-contain md:w-1/3 md:h-full md:self-center" src="/assets/images/thumb-up-dynamic-color.png" alt="Thumbs up"/>
+        <div className="p-8">
           <HeroOneButton
             title={
               <>
-                {'Det bästa sättet att upphandla\n'}
+                {'Bästa sättet att upphandla\n'}
                 <span className="text-primary-500">öppen källkod</span>
               </>
             }
