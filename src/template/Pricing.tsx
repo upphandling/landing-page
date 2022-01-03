@@ -27,8 +27,8 @@ const Pricing = () => (
         <PricingFeature text="Pushnotiser med anbud/förfarande" />
       </PricingCard>
       <PricingCard
-        name="Upphandlare per DIS"
-        price="2000kr / mån"
+        name="Upphandlare"
+        price="2000kr / DIS / mån"
         description="Första DIS är gratis"
         popular
         button={
