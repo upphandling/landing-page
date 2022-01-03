@@ -3,7 +3,7 @@ import {Section} from '../layout/Section'
 import {TestimonialCard} from '../testimonial/TestimonialCard'
 
 const Testimonial = () => (
-  <Section title="Customer's Review" subtitle="Testimonials">
+  <Section title="Ord från branschen" subtitle="Tyck till">
     <RoundedBackground color="bg-gray-100">
       <div className="py-12 px-6 grid grid-cols-1 md:grid-cols-3 gap-y-8 gap-x-12">
         <TestimonialCard
