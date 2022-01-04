@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 import {Background} from '../background/Background'
@@ -28,7 +29,9 @@ const Hero = () => (
 
     <Section yPadding="pt-20 pb-32">
       <div className="md:flex">
-        <img
+        <Image
+          width={500}
+          height={500}
           className=" h-80 object-contain md:w-1/3 md:h-full md:self-center"
           src="/assets/images/thumb-up-dynamic-color.png"
           alt="Thumbs up"
