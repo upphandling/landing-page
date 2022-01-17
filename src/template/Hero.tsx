@@ -13,15 +13,8 @@ const Hero = () => (
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
-          <Link href="/">
-            <a>Dokumentation</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
-            <a>
-              <Button>Testa idag!</Button>
-            </a>
+          <Link href="https://github.com/upphandling/upphandling-app">
+            <a>❤️ Github</a>
           </Link>
         </li>
       </NavbarTwoColumns>
