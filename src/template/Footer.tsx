@@ -20,91 +20,87 @@ const Footer = () => (
             />
           </div>
 
-          <FooterLinks title="Product">
+          <FooterLinks title="Sponsorer">
             <li>
-              <Link href="/">
-                <a>First link</a>
+              <Link href="https://iteam.se">
+                <a>Iteam</a>
               </Link>
             </li>
             <li>
-              <Link href="/">
-                <a>Second link</a>
+              <Link href="https://safespring.se">
+                <a>Safespring</a>
               </Link>
             </li>
             <li>
-              <Link href="/">
-                <a>Third link</a>
+              <Link href="https://skolplattformen.org">
+                <a>Öppna skolplattformen / Not Free Beer AB</a>
               </Link>
             </li>
             <li>
-              <Link href="/">
-                <a>Forth link</a>
-              </Link>
-            </li>
-          </FooterLinks>
-          <FooterLinks title="Resources">
-            <li>
-              <Link href="/">
-                <a>First link</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/">
-                <a>Second link</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/">
-                <a>Third link</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/">
-                <a>Forth link</a>
+              <Link href="mailto:christian@landgren.nu">
+                <a>Vill ditt företag synas här?</a>
               </Link>
             </li>
           </FooterLinks>
-          <FooterLinks title="Contact">
+          <FooterLinks title="För utvecklare">
             <li>
-              <Link href="/">
-                <a>First link</a>
+              <Link href="https://github.com/upphandling/upphandling-app">
+                <a>Källkod för appen</a>
               </Link>
             </li>
             <li>
-              <Link href="/">
-                <a>Second link</a>
+              <Link href="https://github.com/upphandling/landing-page">
+                <a>Källkod för denna hemsida</a>
               </Link>
             </li>
             <li>
-              <Link href="/">
-                <a>Third link</a>
+              <Link href="https://api.upphandling.app">
+                <a>Öppet API (under utveckling)</a>
+              </Link>
+            </li>
+            
+          </FooterLinks>
+          <FooterLinks title="Kontakta oss">
+            <li>
+              <Link href="mailto:christian.landgren@iteam.se">
+                <a>Christian Landgren, utveckling och PR</a>
               </Link>
             </li>
             <li>
-              <Link href="/">
-                <a>Forth link</a>
+              <Link href="mailto:ted@staltec.se">
+                <a>Ted Stalte, juridik och upphandling</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="mailto:johan.linaker@ri.se">
+                <a>Johan Linåker, öppen källkod</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="mailto:festiz@gmail.com">
+                <a>Stefan Wallin, utveckling</a>
               </Link>
             </li>
           </FooterLinks>
-          <FooterLinks title="Legal">
+          <FooterLinks title="Legal (under utveckling)">
             <li>
               <Link href="/">
-                <a>First link</a>
+                <a>Säkerhet</a>
               </Link>
             </li>
             <li>
               <Link href="/">
-                <a>Second link</a>
+                <a>Personuppgifter</a>
               </Link>
             </li>
             <li>
               <Link href="/">
-                <a>Third link</a>
+                <a>Legala frågor</a>
               </Link>
             </li>
             <li>
               <Link href="/">
-                <a>Forth link</a>
+                <a>Presskit</a>
               </Link>
             </li>
           </FooterLinks>
