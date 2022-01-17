@@ -14,7 +14,7 @@ const Hero = () => (
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
           <Link href="https://github.com/upphandling/upphandling-app">
-            <a>❤️ Github</a>
+            <a>❤️ Utvecklare</a>
           </Link>
         </li>
       </NavbarTwoColumns>
