@@ -43,7 +43,7 @@ const FAQ = () => (
           upphandling är för krångliga och därför ville vi visa att det inte
           behöver vara så svårt. Därför började vi med en app. Det är en
           designprincip som kallas mobile-first som tvingar oss som utvecklar
-          appen att göra den så enkel som möjligt för mobil, det gör oftast även
+          appen att göra den så enkel som möjligt för mobil, det ger oftast även
           fördelar för större skärmar.
         </p>
       </QuestionAnswer>
