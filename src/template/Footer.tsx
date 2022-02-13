@@ -77,7 +77,7 @@ const Footer = () => (
               </Link>
             </li>
             <li>
-              <Link href="mailto:festiz@gmail.com">
+              <Link href="https://twitter.com/Stefan_Wallin">
                 <a>Stefan Wallin, utveckling</a>
               </Link>
             </li>

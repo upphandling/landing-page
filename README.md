@@ -20,7 +20,7 @@ This is an initiative by some engaged citizens:
 - Christian Landgren, Iteam
 - Johan Linåker, LTH
 - Ted Stalte
-- Stefan Wallin
+- Stefan Wallin, Iteam
 
 ## License
 

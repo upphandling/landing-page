@@ -7,12 +7,12 @@ import {Section} from '../layout/Section'
 const Banner = () => (
   <Section>
     <CTABanner
-      title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-      subtitle="Start your Free Trial."
+      title="Orkade du scrolla hela vägen hit?! Vill du veta mer om projektet?"
+      subtitle="Vi finns på Twitter!"
       button={
-        <Link href="/">
+        <Link href="https://twitter.com/UpphandlingApp">
           <a>
-            <Button>Get Started</Button>
+            <Button>Följ oss</Button>
           </a>
         </Link>
       }
