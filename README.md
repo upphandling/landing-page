@@ -1,8 +1,8 @@
-## Upphandling.app landing page
+## HappyLOU.app landing page
 
 ![build status](https://github.com/upphandling/landing-page/actions/workflows/publish.yaml/badge.svg)
 
-This is the official landing page for the app Upphandling.app. Our goal is to make it easier for public sector in Sweden/EU to procure open source software.
+This is the official landing page for the app HappyLOU.app. Our goal is to make it easier for public sector in Sweden/EU to procure open source software.
 
 ## Get started
 

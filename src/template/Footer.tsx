@@ -9,8 +9,8 @@ import {AppConfig} from '../utils/AppConfig'
 import {Logo} from './Logo'
 
 const Footer = () => (
-  <Background color="bg-gray-100">
-    <Section>
+  <Background color="bg-primary-500">
+    <Section dark>
       <FooterTwoRowsCopyright siteName={AppConfig.site_name}>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-6">
           <div className="col-span-1 sm:col-span-2">
@@ -58,7 +58,6 @@ const Footer = () => (
                 <a>Öppet API (under utveckling)</a>
               </Link>
             </li>
-            
           </FooterLinks>
           <FooterLinks title="Kontakta oss">
             <li>

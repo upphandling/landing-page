@@ -5,6 +5,7 @@ type IButtonProps = {
   secondary?: boolean
   full?: boolean
   children: string
+  dark?: boolean
 }
 
 const Button = (props: IButtonProps) => {
@@ -14,6 +15,7 @@ const Button = (props: IButtonProps) => {
     'btn-base': !props.xl,
     'btn-secondary': props.secondary,
     'btn-primary': !props.secondary,
+    'btn-dark': props.dark,
     'w-full': props.full,
   })
 
@@ -37,6 +39,10 @@ const Button = (props: IButtonProps) => {
 
           .btn-primary {
             @apply text-white bg-primary-500;
+          }
+
+          .btn-dark {
+            @apply text-gray-100 bg-primary-900;
           }
 
           .btn-primary:hover {

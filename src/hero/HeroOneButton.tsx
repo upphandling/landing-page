@@ -8,12 +8,12 @@ type IHeroOneButtonProps = {
 
 const HeroOneButton = (props: IHeroOneButtonProps) => (
   <header>
-    <h1 className="text-6xl text-gray-900 font-bold pt-16 leading-none tracking-tight">
+    <h1 className="text-6xl text-gray-100 font-bold pt-16 leading-none tracking-tight">
       {props.title}
     </h1>
-    <div className="text-2xl mt-4 mb-8">{props.description}</div>
+    <div className="text-3xl mt-4 mb-8">{props.description}</div>
 
-    {props.button}
+    <div className="flex flex-row-reverse">{props.button}</div>
   </header>
 )
 
