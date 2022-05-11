@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="205px" height="205px" viewBox="0 0 205 205" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Artboard</title>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-Copy" transform="translate(53.000000, 17.000000)">
+            <circle id="Oval-Copy-3" fill="#57A585" cx="19" cy="36" r="19"></circle>
+            <circle id="Oval-Copy-4" fill="#57A585" cx="19" cy="153" r="19"></circle>
+            <circle id="Oval-Copy-5" fill="#57A585" cx="80" cy="19" r="19"></circle>
+            <line x1="18.5" y1="37.4190141" x2="18.5" y2="155.580986" id="Line-Copy" stroke="#57A585" stroke-width="13" fill="#57A585" stroke-linecap="square"></line>
+            <path d="M19,155 C19,144.973684 19,135.504386 19,126.592105 C19,113.223684 19,96.5131579 51.3507463,89.8289474 C83.7014925,83.1447368 78.7244546,61.4210526 78.7244546,28" id="Path-2-Copy" stroke="#57A585" stroke-width="13"></path>
+        </g>
+    </g>
+</svg>
