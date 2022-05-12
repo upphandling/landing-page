@@ -5,6 +5,7 @@ type IVerticalFeatureRowProps = {
   title: string
   description: string
   image: string
+  icon: string
   imageAlt: string
   note?: string
   reverse?: boolean
@@ -24,6 +25,7 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
   return (
     <div className={verticalFeatureClass}>
       <div className="w-full sm:w-1/2 text-center sm:px-6">
+        <Image width={200} height={200} src={props.icon} alt="Icon" />
         <h3 className="text-3xl text-gray-900 font-semibold">{props.title}</h3>
         <div className="mt-6 text-xl leading-9">{props.description}</div>
         {props.note ? (
