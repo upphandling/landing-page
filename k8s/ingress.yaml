@@ -15,9 +15,21 @@ spec:
   tls:
     - hosts:
         - upphandling.app
+        - happylou.se
+        - happylou.org
       secretName: landing-page-secret-tls
   rules:
     - host: upphandling.app
+      http:
+        paths:
+          - pathType: Prefix
+            path: '/'
+            backend:
+              service:
+                name: landing-page
+                port:
+                  number: 3000
+    - host: happylou.se
       http:
         paths:
           - pathType: Prefix
