@@ -10,7 +10,7 @@ import {Logo} from './Logo'
 const Hero = () => (
   <Background color="bg-primary-500" dark>
     <Section yPadding="py-6" dark>
-      <NavbarTwoColumns logo={<Logo xl />}>
+      <NavbarTwoColumns logo={<Logo />}>
         <li>
           <Link href="https://github.com/upphandling/upphandling-app">
             <a className="text-primary-100">❤️ Källkod</a>
