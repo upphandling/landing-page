@@ -32,6 +32,11 @@ const Footer = () => (
               </Link>
             </li>
             <li>
+              <Link href="https://roaring.io">
+                <a>Roaring.io</a>
+              </Link>
+            </li>
+            <li>
               <Link href="https://skolplattformen.org">
                 <a>Öppna skolplattformen / Not Free Beer AB</a>
               </Link>

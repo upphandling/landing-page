@@ -13,7 +13,7 @@ const Hero = () => (
       <NavbarTwoColumns logo={<Logo />}>
         <li>
           <Link href="https://github.com/upphandling/upphandling-app">
-            <a className="text-primary-100">❤️ Källkod</a>
+            <a className="text-primary-100">❤️ Öppen källkod</a>
           </Link>
         </li>
         <li>
