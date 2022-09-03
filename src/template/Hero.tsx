@@ -26,7 +26,7 @@ const Hero = () => (
 
     <Section yPadding="pt-20 pb-32" dark>
       <div className="md:flex">
-        <Image
+        <img
           width={500}
           height={500}
           className=" h-80 object-contain md:w-1/3 md:h-full md:self-center"
