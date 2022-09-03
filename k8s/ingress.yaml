@@ -39,3 +39,13 @@ spec:
                 name: landing-page
                 port:
                   number: 3000
+    - host: happylou.org
+      http:
+        paths:
+          - pathType: Prefix
+            path: '/'
+            backend:
+              service:
+                name: landing-page
+                port:
+                  number: 3000
