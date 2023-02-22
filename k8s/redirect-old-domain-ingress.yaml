@@ -8,8 +8,13 @@ metadata:
     nginx.ingress.kubernetes.io/configuration-snippet: |
       rewrite / https://happylou.se permanent;
     external-dns.alpha.kubernetes.io/hostname: upphandling.app.
+    cert-manager.io/cluster-issuer: 'letsencrypt-prod'
 
 spec:
+  tls:
+    - hosts:
+        - upphandling.app
+      secretName: upphandling-landing-page-tls
   rules:
     - host: upphandling.app
       http:
