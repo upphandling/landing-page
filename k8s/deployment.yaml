@@ -26,6 +26,6 @@ spec:
     spec:
       containers:
         - name: landing-page
-          image: happylou/landing-page
+          image: happylou/landing-page  # {"$imagepolicy": "flux-system:landing-page"}
           ports:
             - containerPort: 3000
