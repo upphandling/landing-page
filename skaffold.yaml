@@ -3,12 +3,15 @@ kind: Config
 metadata:
   name: landing-page
 build:
+  tagPolicy:
+    sha256: {} # latest
   artifacts:
   - image: happylou/landing-page
     docker:
       dockerfile: Dockerfile
 manifests:
-  rawYaml:
-  - k8s/*
+  kustomize:
+    paths:
+    - k8s/kustomization.yaml
 deploy:
   kubectl: {}

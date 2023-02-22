@@ -3,5 +3,7 @@ kind: Kustomization
 namespace: happylou
 
 resources:
-  - latest.yaml
+  - namespace.yaml
+  - deployment.yaml
   - redirect-old-domain-ingress.yaml
+  - ingress.yaml
