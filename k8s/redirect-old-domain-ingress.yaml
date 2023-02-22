@@ -1,0 +1,27 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: redirect
+  namespace: happylou
+  annotations:
+    kubernetes.io/ingress.class: 'nginx'
+    nginx.ingress.kubernetes.io/configuration-snippet: |
+      rewrite / https://happylou.se permanent;
+    external-dns.alpha.kubernetes.io/hostname: upphandling.app.
+
+spec:
+  tls:
+    - hosts:
+        - upphandling.app
+      secretName: upphandling-app-secret-tls
+  rules:
+    - host: upphandling.app
+      http:
+        paths:
+          - pathType: Prefix
+            path: '/'
+            backend:
+              service:
+                name: landing-page
+                port:
+                  number: 3000

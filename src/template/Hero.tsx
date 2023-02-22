@@ -17,7 +17,7 @@ const Hero = () => (
           </Link>
         </li>
         <li>
-          <Link href="https://api.upphandling.app">
+          <Link href="https://api.happylou.se">
             <a className="text-primary-100">API</a>
           </Link>
         </li>

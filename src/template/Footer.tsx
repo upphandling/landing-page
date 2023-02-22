@@ -59,7 +59,7 @@ const Footer = () => (
               </Link>
             </li>
             <li>
-              <Link href="https://api.upphandling.app">
+              <Link href="https://api.happylou.se">
                 <a>Öppet API (under utveckling)</a>
               </Link>
             </li>

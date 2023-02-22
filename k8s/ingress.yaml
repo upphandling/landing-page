@@ -9,7 +9,7 @@ metadata:
     nginx.ingress.kubernetes.io/http2-push-preload: 'true'
     nginx.ingress.kubernetes.io/proxy-pass-headers: 'Location'
     nginx.ingress.kubernetes.io/configuration-snippet: |
-      more_set_headers "Content-Security-Policy: default-src 'self'; script-src https://happylou.se https://upphandling.app https://matomo.iteam.services; style-src https://happylou.se https://upphandling.app; font-src https://happylou.se https://upphandling.app; img-src https://happylou.se https://upphandling.app; connect-src https://happylou.se https://upphandling.app https://matomo.iteam.services; manifest-src data:; frame-src 'none'; frame-ancestors 'none'; object-src 'none'; ";
+      more_set_headers "Content-Security-Policy: default-src 'self'; script-src https://happylou.se https://matomo.iteam.services; style-src https://happylou.se; font-src https://happylou.se; img-src https://happylou.se; connect-src https://happylou.se https://matomo.iteam.services; manifest-src data:; frame-src 'none'; frame-ancestors 'none'; object-src 'none'; ";
       more_set_headers "X-Content-Type-Options: nosniff";
       more_set_headers "X-Frame-Options: DENY";
       more_set_headers "X-Xss-Protection: 0";
@@ -17,25 +17,14 @@ metadata:
       more_set_headers "Cross-Origin-Resource-Policy: same-site";
       more_set_headers "Referrer-Policy strict-origin";
     cert-manager.io/cluster-issuer: 'letsencrypt-prod'
-    external-dns.alpha.kubernetes.io/hostname: upphandling.app., happylou.se.
+    external-dns.alpha.kubernetes.io/hostname: happylou.se.
 
 spec:
   tls:
     - hosts:
-        - upphandling.app
         - happylou.se
       secretName: landing-page-secret-tls
   rules:
-    - host: upphandling.app
-      http:
-        paths:
-          - pathType: Prefix
-            path: '/'
-            backend:
-              service:
-                name: landing-page
-                port:
-                  number: 3000
     - host: happylou.se
       http:
         paths:
