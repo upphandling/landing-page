@@ -4,19 +4,26 @@ metadata:
   name: landing-page
   namespace: upphandling
   annotations:
-    kubernetes.io/ingress.class: 'public'
-    cert-manager.io/cluster-issuer: 'letsencrypt-prod'
+    kubernetes.io/ingress.class: 'nginx'
     nginx.ingress.kubernetes.io/from-to-www-redirect: 'true'
     nginx.ingress.kubernetes.io/http2-push-preload: 'true'
-    nginx.ingress.kubernetes.io/proxy-body-size: '500m'
     nginx.ingress.kubernetes.io/proxy-pass-headers: 'Location'
+    nginx.ingress.kubernetes.io/configuration-snippet: |
+      more_set_headers "Content-Security-Policy: default-src 'self'; script-src https://happylou.se https://upphandling.app https://matomo.iteam.services; style-src https://happylou.se https://upphandling.app; font-src https://happylou.se https://upphandling.app; img-src https://happylou.se https://upphandling.app; connect-src https://happylou.se https://upphandling.app https://matomo.iteam.services; manifest-src data:; frame-src 'none'; frame-ancestors 'none'; object-src 'none'; ";
+      more_set_headers "X-Content-Type-Options: nosniff";
+      more_set_headers "X-Frame-Options: DENY";
+      more_set_headers "X-Xss-Protection: 0";
+      more_set_headers "Strict-Transport-Security: max-age=31536000; includeSubDomains;";
+      more_set_headers "Cross-Origin-Resource-Policy: same-site";
+      more_set_headers "Referrer-Policy strict-origin";
+    cert-manager.io/cluster-issuer: 'letsencrypt-prod'
+    external-dns.alpha.kubernetes.io/hostname: upphandling.app., happylou.se.
 
 spec:
   tls:
     - hosts:
         - upphandling.app
         - happylou.se
-        # - happylou.org
       secretName: landing-page-secret-tls
   rules:
     - host: upphandling.app
@@ -39,13 +46,3 @@ spec:
                 name: landing-page
                 port:
                   number: 3000
-    # - host: happylou.org
-    #   http:
-    #     paths:
-    #       - pathType: Prefix
-    #         path: '/'
-    #         backend:
-    #           service:
-    #             name: landing-page
-    #             port:
-    #               number: 3000

@@ -6,7 +6,7 @@ metadata:
 spec:
   ports:
     - port: 3000
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     app: landing-page
 ---
@@ -26,6 +26,6 @@ spec:
     spec:
       containers:
         - name: landing-page
-          image: landing-page
+          image: happylou/landing-page
           ports:
             - containerPort: 3000

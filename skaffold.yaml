@@ -4,7 +4,7 @@ metadata:
   name: landing-page
 build:
   artifacts:
-    - image: landing-page
+    - image: happylou/landing-page
       docker:
         dockerfile: Dockerfile
 deploy:
@@ -12,3 +12,4 @@ deploy:
     manifests:
       - k8s/deployment.yaml
       - k8s/ingress.yaml
+      - k8s/namespace.yaml
