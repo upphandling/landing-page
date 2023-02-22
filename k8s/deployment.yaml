@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: landing-page
-  namespace: upphandling
+  namespace: happylou
 spec:
   ports:
     - port: 3000
@@ -14,7 +14,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: landing-page
-  namespace: upphandling
+  namespace: happylou
 spec:
   selector:
     matchLabels:

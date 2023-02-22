@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: landing-page
-  namespace: upphandling
+  namespace: happylou
   annotations:
     kubernetes.io/ingress.class: 'nginx'
     nginx.ingress.kubernetes.io/from-to-www-redirect: 'true'

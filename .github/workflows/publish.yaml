@@ -52,6 +52,6 @@ jobs:
 
       - name: Push new manifest to FluxCD
         run: |
-          git add kustomize/latest.yaml
+          git add deploy/latest.yaml
           git commit --amend --no-edit
           git push
