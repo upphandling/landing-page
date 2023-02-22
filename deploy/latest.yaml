@@ -25,7 +25,7 @@ spec:
         app: landing-page
     spec:
       containers:
-      - image: registry.iteam.services/happylou_landing-page:v1.1.0-dirty@sha256:9dab00d0b36eb6905fcf430b03d616a1243268ffd81b1bcc7c4c57236a6a244b
+      - image: registry.iteam.services/happylou_landing-page:v1.2.0-dirty@sha256:2eaf909c41791f409ec8edb5cc2d9ae77f4e09e027c3add707a663965d89b5aa
         name: landing-page
         ports:
         - containerPort: 3000
@@ -35,10 +35,10 @@ kind: Ingress
 metadata:
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt-prod
-    external-dns.alpha.kubernetes.io/hostname: upphandling.app., happylou.se.
+    external-dns.alpha.kubernetes.io/hostname: happylou.se.
     kubernetes.io/ingress.class: nginx
     nginx.ingress.kubernetes.io/configuration-snippet: |
-      more_set_headers "Content-Security-Policy: default-src 'self'; script-src https://happylou.se https://upphandling.app https://matomo.iteam.services; style-src https://happylou.se https://upphandling.app; font-src https://happylou.se https://upphandling.app; img-src https://happylou.se https://upphandling.app; connect-src https://happylou.se https://upphandling.app https://matomo.iteam.services; manifest-src data:; frame-src 'none'; frame-ancestors 'none'; object-src 'none'; ";
+      more_set_headers "Content-Security-Policy: default-src 'self'; script-src https://happylou.se https://matomo.iteam.services; style-src https://happylou.se; font-src https://happylou.se; img-src https://happylou.se; connect-src https://happylou.se https://matomo.iteam.services; manifest-src data:; frame-src 'none'; frame-ancestors 'none'; object-src 'none'; ";
       more_set_headers "X-Content-Type-Options: nosniff";
       more_set_headers "X-Frame-Options: DENY";
       more_set_headers "X-Xss-Protection: 0";
@@ -52,16 +52,6 @@ metadata:
   namespace: happylou
 spec:
   rules:
-  - host: upphandling.app
-    http:
-      paths:
-      - backend:
-          service:
-            name: landing-page
-            port:
-              number: 3000
-        path: /
-        pathType: Prefix
   - host: happylou.se
     http:
       paths:
@@ -74,7 +64,6 @@ spec:
         pathType: Prefix
   tls:
   - hosts:
-    - upphandling.app
     - happylou.se
     secretName: landing-page-secret-tls
 ---
@@ -84,3 +73,30 @@ metadata:
   labels:
     name: happylou
   name: happylou
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    external-dns.alpha.kubernetes.io/hostname: upphandling.app.
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/configuration-snippet: |
+      rewrite / https://happylou.se permanent;
+  name: redirect
+  namespace: happylou
+spec:
+  rules:
+  - host: upphandling.app
+    http:
+      paths:
+      - backend:
+          service:
+            name: landing-page
+            port:
+              number: 3000
+        path: /
+        pathType: Prefix
+  tls:
+  - hosts:
+    - upphandling.app
+    secretName: upphandling-app-secret-tls
