@@ -23,7 +23,7 @@ spec:
   tls:
     - hosts:
         - happylou.se
-      secretName: landing-page-secret-tls
+      secretName: happylou-landing-page-tls
   rules:
     - host: happylou.se
       http:

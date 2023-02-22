@@ -10,10 +10,6 @@ metadata:
     external-dns.alpha.kubernetes.io/hostname: upphandling.app.
 
 spec:
-  tls:
-    - hosts:
-        - upphandling.app
-      secretName: upphandling-app-secret-tls
   rules:
     - host: upphandling.app
       http:

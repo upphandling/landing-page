@@ -4,3 +4,4 @@ namespace: happylou
 
 resources:
   - latest.yaml
+  - redirect-old-domain-ingress.yaml
