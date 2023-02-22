@@ -20,38 +20,9 @@ jobs:
       - name: Checkout sources
         uses: actions/checkout@v3
 
-      - name: Cache skaffold image builds & config
-        uses: actions/cache@v2
-        with:
-          path: ~/.skaffold/
-          key: skaffold
-          restore-keys: |
-            skaffold
-
-      - name: Update Minor Verision
-        run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "github-actions[bot]"
-
-          npm version minor
-
       - name: Build with Skaffold
         uses: hiberbee/github-action-skaffold@latest
         with:
           command: build
           repository: registry.iteam.services
           digest-source: tag
-
-      - name: Render output
-        uses: hiberbee/github-action-skaffold@latest
-        with:
-          command: render --output deploy/latest.yaml
-          cache-file: ''
-          repository: registry.iteam.services
-          digest-source: remote
-
-      - name: Push new manifest to FluxCD
-        run: |
-          git add deploy/latest.yaml
-          git commit --amend --no-edit
-          git push
