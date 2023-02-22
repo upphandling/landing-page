@@ -20,6 +20,22 @@ jobs:
       - name: Checkout sources
         uses: actions/checkout@v3
 
+      - name: Cache skaffold image builds & config
+        uses: actions/cache@v2
+        with:
+          path: ~/.skaffold/
+          key: skaffold
+          restore-keys: |
+            skaffold
+
+      - name: Update Minor Verision
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+
+          npm version minor
+          git push
+
       - name: Build with Skaffold
         uses: hiberbee/github-action-skaffold@latest
         with:
