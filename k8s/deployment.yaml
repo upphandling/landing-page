@@ -26,6 +26,6 @@ spec:
     spec:
       containers:
         - name: landing-page
-          image: registry.iteam.services/happylou_landing-page  # {"$imagepolicy": "happylou:landing-page"}
+          image: ghcr.io/upphandling/landing-page:1.5.1  # {"$imagepolicy": "happylou:landing-page"}
           ports:
             - containerPort: 3000
