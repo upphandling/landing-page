@@ -5,8 +5,10 @@ metadata:
   namespace: happylou
   annotations:
     kubernetes.io/ingress.class: 'nginx'
-    nginx.ingress.kubernetes.io/configuration-snippet: |
-      rewrite / https://happylou.se permanent;
+    nginx.ingress.kubernetes.io/server-snippet: |
+      if ($host = 'upphandling.app') {
+        return 301 https://happylou.se;
+      }
     external-dns.alpha.kubernetes.io/hostname: upphandling.app.
     cert-manager.io/cluster-issuer: 'letsencrypt-prod'
 
